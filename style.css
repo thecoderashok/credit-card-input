@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(28, 28, 28);
+}
+
+.payment_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(12, 12, 12);
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.input_wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 6px 0;
+    padding-right: 6px;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: border-color .3s ease;
+}
+
+.input_wrapper:focus-within{
+    border-color: rgb(156, 156, 156);
+}
+
+
+.logo_box{
+    width: auto;
+    min-height: 25px;
+    background: rgba(62, 57, 57, 0);
+    border: .5px solid rgb(41, 41, 41);
+    border-radius: 5px;
+    display: flex;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_box img{
+    width: 20px;
+    height: auto;
+}
+
+
+input{
+    width: 100%;
+    min-width: 0px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: rgb(240, 240, 240);
+    background: transparent;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
